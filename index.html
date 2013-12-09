@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>jQuery yearpicker demo page</title>
+<style>
+
+select.monthpick {
+margin-right: 5px;
+}
+
+select.yearpick {
+margin-left: 5px;
+}
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="jquery.monthpicker.js"></script>
+
+<script>
+$(document).ready(function() {
+	$('#yearpicker').monthpicker();
+	$('#yearpicker2').monthpicker({'minYear':'2000'});
+
+	$('input:submit').click(function(){
+		$('#yearpicker').show();
+		$('#yearpicker2').show();
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+<form name="test">
+<input type="text" id="yearpicker">
+<br>
+<br>
+<input type="text" id="yearpicker2">
+<br>
+<br>
+<input type="submit" value="show values">
+<br>
+<p>for more jquery stuff visit <a href="http://www.phpmedia.de">www.phpmedia.de</a></p>
+</form>
+</body>
+</html>
