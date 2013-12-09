@@ -1,0 +1,20 @@
+/**
+* monthPicker - a simple but useful month/year picker
+* this plugin creates two selectboxes where the user can can select month and year. afterwars a unix-timestamp is written into the
+* original input field.
+*
+* Copyright (c) Dirk Diebel <http://www.phpmedia.de/>.
+* Released under MIT License
+*
+*
+* <usage>
+*
+*         $('#id-selector').monthpicker([options]);
+*
+* [options] accepts following JSON properties:
+* minYear - the minimum year the selectbox should show
+* maxYear - the maximum year the selectbox should show
+* month - a map of month labels
+*                f.e. german months
+*                month : ['January','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember']
+* </usage>
