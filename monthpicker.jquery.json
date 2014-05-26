@@ -1,0 +1,28 @@
+{
+"name": "monthpicker",
+"title": "jQuery Monthpicker",
+"description": "a simple but useful month/year picker.",
+"keywords": [
+"datepicker",
+"month",
+"year"
+],
+"version": "1.0",
+"author": {
+"name": "Dirk Diebel",
+"url": "https://github.com/ddiebel/monthpicker"
+},
+"licenses": [
+{
+"type": "MIT",
+"url": "http://opensource.org/licenses/MIT"
+}
+],
+"bugs": "https://github.com/ddiebel/monthpicker/issues",
+"homepage": "https://github.com/ddiebel/monthpicker",
+"docs": "https://github.com/ddiebel/monthpicker",
+"download": "https://github.com/ddiebel/monthpicker",
+"dependencies": {
+"jquery": ">=1.4"
+}
+}
