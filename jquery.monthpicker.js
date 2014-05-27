@@ -41,6 +41,9 @@
             },
             "fr" : {
                 "month" : ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+            },
+            "it" : {
+                "month" : ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre']
             }
         }, defaults = {
             minYear: "1980",
