@@ -1,7 +1,7 @@
 {
 "name": "monthpicker",
 "title": "jQuery Monthpicker",
-"description": "a simple but useful month/year picker.",
+"description": "A simple but useful month/year picker. Converts a simple input field to two selectboxes (month & year) and returns the unix timestamps of the selection back to the input field. ",
 "keywords": [
 "datepicker",
 "month",
