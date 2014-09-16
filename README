@@ -1,7 +1,7 @@
 
-monthPicker - a simple but useful month/year picker
+monthPicker - A simple but useful month/year picker.
 
-this plugin creates two selectboxes where the user can can select month and year. afterwars a unix-timestamp is written into the original input field.
+This plugin creates two selectboxes where the user can select month and year. Afterwards an unix-timestamp is written into the original input field.
 
 Copyright (c) Dirk Diebel <http://www.phpmedia.de/>.
 Released under MIT License
