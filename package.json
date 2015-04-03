@@ -1,0 +1,23 @@
+{
+  "name": "monthpicker",
+  "version": "1.1.0",
+  "description": "A simple but useful month/year picker. Converts a simple input field to two selectboxes (month & year) and returns the unix timestamps of the selection back to the input field. Now with austrian, english, german, spanish, french, hungarian, dutch and italian labels.",
+  "main": "jquery.monthpicker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddiebel/monthpicker.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Dirk Diebel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddiebel/monthpicker/issues"
+  },
+  "homepage": "https://github.com/ddiebel/monthpicker"
+}
