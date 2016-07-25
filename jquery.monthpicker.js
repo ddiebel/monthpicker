@@ -50,6 +50,9 @@
             },
             "nl" : {
                 "month" : ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december']
+            },
+            "pt-BR" : {
+                "month" : ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
             }
         }, defaults = {
             minYear: "1980",
