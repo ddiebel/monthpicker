@@ -48,6 +48,7 @@ Available languages:
 - hungarian : hu
 - italian : it
 - dutch : nl
+- portuguese (Brazil) : pt-BR
 
 ````html
 <script>
