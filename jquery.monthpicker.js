@@ -16,6 +16,7 @@
  *  maxYear     - the maximum year the selectbox should show
  *  lang        - language in which all labels should be generated
  *  month       - a map of month labels (overrides the lang parameter if set)
+ *  class       - a custom class of selectbox tags
  *  f.e. german months
  *   month : ['January','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember']
  * </usage>
@@ -57,6 +58,7 @@
         }, defaults = {
             minYear: "1980",
             maxYear: "2010",
+            class: "",
             month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         }, i, yearbox, monthbox, obj = $(this);
 
@@ -81,13 +83,11 @@
         $.map(options.month, function (n, i) {
             monthbox += '<option value="' + i + '">' + n + '</option>';
         });
-
-
-        var yearElement = $('<select class="yearpick">' + yearbox + '</select>'),
-            monthElement = $('<select class="monthpick">' + monthbox + '</select>');
-
-        monthElement.insertBefore($(this));
-        yearElement.insertAfter($(this));
+        var yearElement = $('<select class="yearpick ' + options.class + '">' + yearbox + '</select>'),
+            monthElement = $('<select class="monthpick ' + options.class + '">' + monthbox + '</select>');
+      
+        monthElement.insertBefore(obj);
+        yearElement.insertAfter(obj);
 
         var createTimestamp = function () {
             obj.attr('value', Math.round(Date.UTC(yearElement.val(), monthElement.val(), 1)) / 1000);
@@ -95,5 +95,11 @@
 
         yearElement.change(createTimestamp);
         monthElement.change(createTimestamp);
+
+        if (obj.val()!= ""){
+            var timestamp = new Date(parseInt(obj.val()) * 1000);
+            yearElement.val(timestamp.getFullYear());
+            monthElement.val(timestamp.getMonth());
+        }
     };
 })(jQuery);
